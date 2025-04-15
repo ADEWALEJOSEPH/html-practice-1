@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable vector graphics</title>
+</head>
+<body>
+    <!-- helps to maintain quality of image -->
+    <svg>
+        <!-- <cirle>
+        cx = x axis
+        cy = y axis
+        r = radius
+        fill = color
+    </circle> -->
+    <!-- shape divider.app -->
+    <circle cx="50" cy="50" r="50" fill="red"></circle>
+    </svg>
+
+    <svg height="200">
+        <!-- rectangle -->
+        <rect width="300" height="100" fill="yellow"></rect>
+    </svg>
+
+    <svg height="200">
+        <!-- line -->
+        <line x1 ="0" y1="0" x2="200" y2="100" style="stroke: blue;stroke-width: 10px;">
+        </line>
+    </svg>
+
+    <svg height="200">
+        <ellipse cx="100"cy="50" rx="100" ry="50" fill="blue"></ellipse>
+    </svg>
+
+    <svg height="200">
+        <polygon points="20,10,300,20,170,130,70" fill="purple"></polygon>
+      </svg>  
+    <svg height="200">
+        <polyline points= "0,0,0,30 30,30 30,60 60,60" fill="green"></polyline>
+    </svg>
+    
+    <svg height="200">
+        <defs>
+            <radialGradient id= "gradient" cx="50%" cy="50%" r="50%" fx="50%" >
+            <stop offset="0%" style="stop-color: rgb(127, 188, 5);"
+            </stop>
+            <stop offset="0%" style="stop-color: rgb(127, 188, 5);"
+            </stop>
+        </defs> 
+
+        <svg height="200">
+            <ellipse cx="100"cy="50" rx="100" ry="50" style="fill:url(#gradient)"></ellipse>
+        </svg>
+    
+
+
+
+</body>
+</html>

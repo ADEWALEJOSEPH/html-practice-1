@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+  <!-- Grid -->
+   <h2>method 1</h2>
+   <div class="grid-container" 
+   style="grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: auto auto;">
+    <div class="grid-box">Box1</div>
+    <div class="grid-box">Box2</div>
+    <div class="grid-box">Box3</div>
+    <div class="grid-box">Box4</div>
+   </div>
+   <h2>methd 2</h2>
+   <div class="grid-container" style="grid-template-columns:repeat(4,1fr);
+   grid-template-rows: auto auto;">
+    <div class="grid-box">1</div>
+    <div class="grid-box">2</div>
+    <div class="grid-box">3</div>
+    <div class="grid-box">4</div>
+   </div>
+   <h3>Method 3</h3>
+   <div class="grid-container" style="grid-template-areas:
+   'header header'
+   'main sidebar'
+   'footer footer';
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: auto 1fr;">
+    <div class="grid-box" style="grid-area: header;">Box1</div>
+    <div class="grid-box" style="grid-area: main;">Box2</div>
+    <div class="grid-box" style="grid-area: sidebar;">Box3</div>
+    <div class="grid-box" style="grid-area: footer;">Box4</div>
+
+   
+
+  
+</body>
+</html>

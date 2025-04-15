@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <fieldset id = "step1">
+            <legend>Step 1: Personal Info</legend>
+            <label for="">Full Name: <input type="text" name = "fullname"></label><br><br>
+            <label for="">Email: <input type="text" name = "email"></label><br><br>
+            <a href="#step2">Next step</a>
+        </fieldset>
+        <fieldset id = "step2">
+            <legend>Step 2: Address</legend>
+            <label for="">Street: <input type="text" name="street"></label><br><br>
+            <label for="">City: <input type="text" name="city"></label><br><br>
+            <a href="#step3">Next Step</a>
+        </fieldset>
+        <fieldset id = "step3">
+            <legend>Step 3: Educational background</legend>
+            <label for="">Primary school: <input type="text" name="Primary school"></label><br><br>
+            <label for="">Secondary school: <input type="text" name="Secondary school"></label><br><br>
+            <label for="">University: <input type="text" name="University"></label><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    <!-- Custom data attribute -->
+    <h1 data-leve="advanced" data-category = "HTML">HTML Advanced concepts</h1>
+    <p>This content is dynamically labeled with custom data attributes</p>
+
+    <!-- Meter and progress tag -->
+    <label for="">File upload progress</label>
+    <progress value ="40" max="100"></progress><br>
+
+    <label for="">Battery</label>
+    <meter value="0.7" min="0", max="1" low="0.3" high="0.8" optimum="1"></meter><br>
+
+    <!-- Embeedding External Content With HTML Object element -->
+     <!-- Embedding a pdf file -->
+     <object data="Computer Networks - A Tanenbaum - 5th Edition.pdf" type="application/pdf" width="300" height="400">
+        <p>Your browser does not support pdf <a href="Computer Networks - A Tanenbaum - 5th Edition.pdf">Download the PDF File</a></p>
+     </object><br>
+
+     <!-- Embedding a vido file> -->
+    <object data="Cosmoball.mp4" type="" width="300" height="400">
+        <p>Your browser does not support video <a href="Cosmoball.mp4">Download the video File</a></p>
+        </object><br>
+
+    <!-- Embedding a mp3 file> -->
+    <object data="Trends.m4a" type="application/pdf" wimth="100" height="200">
+    <p>Your browser does not support mp3<a href="Trends.m4a">Download the mp3 File</a></p>
+    </object><br>
+
+    <!-- Using the details elements -->
+     <details>
+        <summary> Tab 1: Overview</summary>
+        <p>plitude Modulation. Figure 2-23(c) is a still denser modulation scheme with 64
+            different combinations, so 6 bits can be transmitted per symbol. It is called
+            QAM-64. Even higher-order QAMs are used too. As you might suspect from
+            these constellations, it is easier to build electronics to produce symbols as a
+             combination of values on each axis than as a combination of ampli
+        </p>
+     </details>
+
+     <details>
+        <summary> Tab 2: Overview</summary>
+        <p>plitude Modulation. Figure 2-23(c) is a still denser modulation scheme with 64
+            different combinations, so 6 bits can be transmitted per symbol. It is called
+            QAM-64. Even higher-order QAMs are used too. As you might suspect from
+            these constellations, it is easier to build electronics to produce symbols as a
+             combination of values on each axis than as a combination of ampli
+        </p>
+     </details>
+     <details>
+        <summary> Tab 3: Overview</summary>
+        <p>plitude Modulation. Figure 2-23(c) is a still denser modulation scheme with 64
+            different combinations, so 6 bits can be transmitted per symbol. It is called
+            QAM-64. Even higher-order QAMs are used too. As you might suspect from
+            these constellations, it is easier to build electronics to produce symbols as a
+             combination of values on each axis than as a combination of ampli
+        </p>
+     </details>
+
+
+
+     Image slide show 
+     <input type="radio" name="slide" id="slide1"checked>
+     <input type="radio" name="slide" id="slide2">
+     <input type="radio" name="slide" id="slide3">
+
+     <div>
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+     </div>
+     <div>
+        <img src="images (1).jpg" alt="slide1">
+        <img src="l.jpg" alt="slide2" width="300" height="300">
+        <img src="j copy.jpg" alt="slide3"width="300" height="300">
+     </div>
+</body>
+</html>
