@@ -1,0 +1,63 @@
+p {
+  border: dashed 4px #8b0000;
+  padding: 10px;
+}
+div {
+  border: #ff0000 dotted 5px;
+  padding: 10px;
+}
+/* border style properties */
+.none {
+  border-style: none;
+}
+
+.hidden {
+  border-bottom: dotted #7f0000 solid;
+  border-top: 15px #0bffff solid;
+  border-left: 5px red solid;
+}
+
+.dash {
+  border-style: dashed 30px;
+  border: #7f0000;
+}
+
+.solid {
+  border-style: solid;
+}
+.double {
+  border-style: double;
+}
+.groove {
+  border-style: groove;
+}
+.ridge {
+  border: ridge;
+}
+.inset {
+  border-style: inset;
+}
+.outset {
+  border-style: outset;
+}
+input {
+  padding: 20px 50px 30px;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+ul.square {
+  list-style-type: square;
+}
+ul.none {
+  list-style-type: none;
+}
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+ol.decimal {
+  list-style-type: decimal;
+}
+ul {
+  list-style-image: url(/img/1694431824544.jpg);  0 

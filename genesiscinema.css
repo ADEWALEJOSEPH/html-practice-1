@@ -4,31 +4,98 @@
 }
 
 .toppage {
-  display:inline-flex;
+  display: flex;
   justify-content: space-around;
   background-color: #74747447;
-  margin: 30px;
-  padding-right: 30px;
-
+  padding: 20px;
+  align-items: center;
 }
 .logo-img {
   float: left;
   display: inline-flex;
   height: 40px;
   width: 90px;
-  
-  
-
 }
 
 .about a {
   color: #000;
   text-decoration: none;
   padding: 20px;
+  margin: 10px;
   text-align: center;
 }
 
 .about a:hover {
-  text-decoration: none;
+  text-decoration: underline 2px solid;
+  color: #ff0000;
 }
 
+.hero {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+}
+
+.slide {
+  width: auto;
+  height: auto;
+  flex: 0 0 100%;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(-0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+.con {
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
+  border-style: double;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d8d8d8;
+}
+
+.con-select {
+  font-family: "Fira Sans Condensed", Sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* flex part */
+/* .container{  */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+  margin-right: 800px;
+  align-items: left;
+}
+.card {
+  border: #000 solid 2px;
+  padding: 10px;
+  flex: 4 auto 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff0000;
+}
+.card-1 {
+  border: #000 2px solid;
+  text-transform: uppercase;
+  flex: 0 auto 2px;
+  padding: 10px;
+  text-align: center;
+}
+.card-1:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
